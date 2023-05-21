@@ -1,0 +1,23 @@
+{
+    "configuration": {
+        "server":{
+            "port": 3002,
+            "baseUrl": "http://localhost"
+        },
+        "mongo":{
+            "url": "mongodb+srv://${username}:${password}@newdb.1tpog60.mongodb.net/${dbName}?retryWrites=true&w=majority",
+            "dbname": "mongo_db",
+            "username": "deep",
+            "password": "Deep123",
+            "options":{
+                "useNewUrlParser": true,
+                "useCreateIndex": true,
+                "useUnifiedTopology": true,
+                "useFindAndModify": true 
+            }
+        },
+        "bcrypt": {
+            "saltRound": 15
+        }
+    }
+}

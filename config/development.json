@@ -1,0 +1,49 @@
+{
+    "configuration": {
+        "server":{
+            "port": 3002,
+            "baseUrl": "http://localhost"
+        },
+        "mongo":{
+            "url": "mongodb+srv://${username}:${password}@newdb.1tpog60.mongodb.net/${dbName}?retryWrites=true&w=majority",
+            "dbname": "mongo_db",
+            "username": "deep",
+            "password": "Deep123",
+            "options":{
+                "useNewUrlParser": true,
+                "useCreateIndex": true,
+                "useUnifiedTopology": true,
+                "useFindAndModify": true 
+            }
+        },
+        "bcrypt": {
+            "saltRound": 15
+        },
+        "jwt": {
+                "signintokensecret": "d6859187b4ec7bde3cca92a6951077a58cd35df5a2a2ef70be39ff8fb11f0643",
+                "algorithm": "HS256",
+                "tokenLife": "1h",
+                "issuer": "!612A94@9p",
+                "audience": "",
+                "subject": "",
+                "refreshtokensecret": "50b82c2b549cc25897b22882454770a7f0cdbfeb0d225edb0a3a155608128867",
+                "refreshTokenLife": "180s",
+                "redisTokenLife": 180  /*  31535100 sec = 365 days */
+        },
+        "redis":{
+            "host": "127.0.0.1",
+            "port": 6379
+        },
+        "nodemailer": {
+            "gmail": {
+              "host": "smtp.gmail.com",
+              "port": 465,
+              "secure": true,
+              "auth": {
+                "user": "info4screenmedia@gmail.com",
+                "pass": "4screenmedia@123"
+              }
+            }
+        }
+    }
+}

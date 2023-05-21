@@ -1,0 +1,1630 @@
+{
+	"info": {
+		"_postman_id": "b8c7ddd7-96c4-4b2b-9f07-8007e14b4143",
+		"name": "Library Application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18355842"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3002/userList",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3002",
+							"path": [
+								"userList"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:3002/userList",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3002",
+									"path": [
+										"userList"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "487"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1e7-iD6ryuV8PJRBKo0x3a2llGQkHrY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 May 2023 08:02:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": null,\n    \"message\": \"All users data is getting successfully.\",\n    \"data\": [\n        {\n            \"_id\": \"64687833f66f4f3ef099626a\",\n            \"name\": \"Deep\",\n            \"email\": \"deep@yopmail.com\",\n            \"phone\": \"9899806778\",\n            \"createdAt\": \"2023-05-20T07:35:20.815Z\"\n        },\n        {\n            \"_id\": \"64687855f66f4f3ef099626b\",\n            \"name\": \"Deep2\",\n            \"email\": \"deep2@yopmail.com\",\n            \"phone\": \"9899806778\",\n            \"createdAt\": \"2023-05-20T07:35:49.542Z\"\n        },\n        {\n            \"_id\": \"64687876f66f4f3ef099626c\",\n            \"name\": \"Deep3\",\n            \"email\": \"deep3@yopmail.com\",\n            \"phone\": \"9899806778\",\n            \"createdAt\": \"2023-05-20T07:36:22.856Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3002/userDelete/60f852b564a94d560065f2d3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3002",
+							"path": [
+								"userDelete",
+								"60f852b564a94d560065f2d3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user detail",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Deep22",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "deep22@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "1234567890",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3002/userUpdate/60f852b564a94d560065f2d3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3002",
+							"path": [
+								"userUpdate",
+								"60f852b564a94d560065f2d3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Deep2",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "deep2@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "1234567890",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3002/userCreate",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3002",
+							"path": [
+								"userCreate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3002/userDetail/60f852b564a94d560065f2d3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3002",
+							"path": [
+								"userDetail",
+								"60f852b564a94d560065f2d3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Books",
+			"item": [
+				{
+					"name": "All Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3002/books",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3002",
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "All Books",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:3002/books",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3002",
+									"path": [
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "25"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"19-Q1kRok01ip+GC8mSo9+vRG1Yeeo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 May 2023 08:06:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"data\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Search for books by title, author, or genre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3002/search?query=deep",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3002",
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "deep"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Search for books by title, author, or genre",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:3002/search?query=deep",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3002",
+									"path": [
+										"search"
+									],
+									"query": [
+										{
+											"key": "query",
+											"value": "deep"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "381"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"17d-nDKsiUgEWKteMM89k1xKuZKFkX8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 May 2023 11:10:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"data\": [\n        {\n            \"genres\": [],\n            \"reviews\": [],\n            \"_id\": \"6469d9c733bb94a208c8de64\",\n            \"title\": \"Book 1\",\n            \"description\": \"Book Description 1\",\n            \"author\": {\n                \"books\": [],\n                \"_id\": \"6469d92234a57e68f0b0591b\",\n                \"name\": \"Author 1\",\n                \"createdAt\": \"2023-05-21T08:41:06.007Z\",\n                \"updatedAt\": \"2023-05-21T08:41:06.007Z\",\n                \"__v\": 0\n            },\n            \"createdAt\": \"2023-05-21T08:43:51.266Z\",\n            \"updatedAt\": \"2023-05-21T08:43:51.266Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Book 1\",\r\n    \"description\": \"Book Description 1\",\r\n    \"author\": \"6469d92234a57e68f0b0591b\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3002/books",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3002",
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Book",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Book 1\",\r\n    \"description\": \"Book Description 1\",\r\n    \"author\": \"6469d92234a57e68f0b0591b\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:3002/books",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3002",
+									"path": [
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "255"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ff-skwosOna5ZN5b5hrn8NGSIoZ1QA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 May 2023 08:43:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": null,\n    \"data\": {\n        \"genres\": [],\n        \"reviews\": [],\n        \"_id\": \"6469d9c733bb94a208c8de64\",\n        \"title\": \"Book 1\",\n        \"description\": \"Book Description 1\",\n        \"author\": \"6469d92234a57e68f0b0591b\",\n        \"createdAt\": \"2023-05-21T08:43:51.266Z\",\n        \"updatedAt\": \"2023-05-21T08:43:51.266Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Adding books to the user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bookId\": \"6469d9c733bb94a208c8de64\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3002/users/64687833f66f4f3ef099626a/books",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3002",
+							"path": [
+								"users",
+								"64687833f66f4f3ef099626a",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Adding books to the user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"bookId\": \"6469d9c733bb94a208c8de64\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:3002/users/64687833f66f4f3ef099626a/books",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3002",
+									"path": [
+										"users",
+										"64687833f66f4f3ef099626a",
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "342"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"156-ie9uKDy+udVy2eMGv/P5LxHEPkI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 May 2023 10:18:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": null,\n    \"data\": {\n        \"books\": [\n            \"6469d9c733bb94a208c8de64\",\n            \"6469d9c733bb94a208c8de64\"\n        ],\n        \"_id\": \"64687833f66f4f3ef099626a\",\n        \"name\": \"Deep\",\n        \"email\": \"deep@yopmail.com\",\n        \"phone\": \"9899806778\",\n        \"password\": \"$2b$15$OJraguCKJZnB/WmYDvhW0OvQjRRhJF71v.Fkf4sP0khmdeJbM/sS2\",\n        \"createdAt\": \"2023-05-20T07:35:20.815Z\",\n        \"updatedAt\": \"2023-05-20T07:35:20.815Z\",\n        \"__v\": 2\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Removing books from the user's collection",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3002/users/64687833f66f4f3ef099626a/books/6469d9c733bb94a208c8de64",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3002",
+							"path": [
+								"users",
+								"64687833f66f4f3ef099626a",
+								"books",
+								"6469d9c733bb94a208c8de64"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Removing books from the user's collection",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:3002/users/64687833f66f4f3ef099626a/books/6469d9c733bb94a208c8de64",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3002",
+									"path": [
+										"users",
+										"64687833f66f4f3ef099626a",
+										"books",
+										"6469d9c733bb94a208c8de64"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "315"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"13b-6x46ZPo2CFh0I3FQW5EET4n2H3Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 May 2023 10:25:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": null,\n    \"data\": {\n        \"books\": [\n            \"6469d9c733bb94a208c8de64\"\n        ],\n        \"_id\": \"64687833f66f4f3ef099626a\",\n        \"name\": \"Deep\",\n        \"email\": \"deep@yopmail.com\",\n        \"phone\": \"9899806778\",\n        \"password\": \"$2b$15$OJraguCKJZnB/WmYDvhW0OvQjRRhJF71v.Fkf4sP0khmdeJbM/sS2\",\n        \"createdAt\": \"2023-05-20T07:35:20.815Z\",\n        \"updatedAt\": \"2023-05-20T07:35:20.815Z\",\n        \"__v\": 3\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Book",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"\",\r\n    \"author\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "/users/http://127.0.0.1:3002/users/:userId/books/:bookId",
+							"protocol": "/users/http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3002",
+							"path": [
+								"users",
+								":userId",
+								"books",
+								":bookId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": null
+								},
+								{
+									"key": "bookId",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Author",
+			"item": [
+				{
+					"name": "Create Author",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Author 1\",\r\n    \"biography\": \"Biography 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3002/author",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3002",
+							"path": [
+								"author"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Author",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Author 1\",\r\n    \"biography\": \"Biography 1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:3002/author",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3002",
+									"path": [
+										"author"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "164"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a4-MSnB9IKnapIe8tGQpQY/p/sKzTA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 May 2023 08:32:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"646885943980021b80285128\",\n    \"name\": \"Author 1\",\n    \"biography\": \"Biography 1\",\n    \"createdAt\": \"2023-05-20T08:32:20.688Z\",\n    \"updatedAt\": \"2023-05-20T08:32:20.688Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Adding Author To Book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Author 1\",\r\n    \"biography\": \"Biography 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3002/author/646885943980021b80285128/book/6469d9c733bb94a208c8de64",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3002",
+							"path": [
+								"author",
+								"646885943980021b80285128",
+								"book",
+								"6469d9c733bb94a208c8de64"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Adding Author To Book",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Author 1\",\r\n    \"biography\": \"Biography 1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:3002/author/646885943980021b80285128/book/6469d9c733bb94a208c8de64",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3002",
+									"path": [
+										"author",
+										"646885943980021b80285128",
+										"book",
+										"6469d9c733bb94a208c8de64"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "223"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"df-I5t0913b2l8tsTpN4CW6IppsaxU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 May 2023 10:17:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": null,\n    \"data\": {\n        \"books\": [\n            \"6469d9c733bb94a208c8de64\"\n        ],\n        \"_id\": \"646885943980021b80285128\",\n        \"name\": \"Author 1\",\n        \"biography\": \"Biography 1\",\n        \"createdAt\": \"2023-05-20T08:32:20.688Z\",\n        \"updatedAt\": \"2023-05-21T10:17:44.934Z\",\n        \"__v\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Author Lists",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3002/author",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3002",
+							"path": [
+								"author"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Author Lists",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:3002/author",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3002",
+									"path": [
+										"author"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "189"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"bd-0pq0eAWFApRTRnK1KztUkep5n/A\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 May 2023 08:33:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"data\": [\n        {\n            \"_id\": \"646885943980021b80285128\",\n            \"name\": \"Author 1\",\n            \"biography\": \"Biography 1\",\n            \"createdAt\": \"2023-05-20T08:32:20.688Z\",\n            \"updatedAt\": \"2023-05-20T08:32:20.688Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Genre",
+			"item": [
+				{
+					"name": "Create Genre",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Genre 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/genre",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"genre"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Genre",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Genre 1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3002/genre",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"genre"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "137"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"89-ToeCEMlPHPAyIryCK1vfcPkFX+Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 May 2023 08:40:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"646887736dc1e273d89a41e9\",\n    \"name\": \"Genre 1\",\n    \"createdAt\": \"2023-05-20T08:40:19.830Z\",\n    \"updatedAt\": \"2023-05-20T08:40:19.830Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Adding Genre to the Book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bookId\": \"6469d9c733bb94a208c8de64\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/genre/646887736dc1e273d89a41e9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"genre",
+								"646887736dc1e273d89a41e9"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Adding Genre to the Book",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"bookId\": \"6469d9c733bb94a208c8de64\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3002/genre/646887736dc1e273d89a41e9",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"genre",
+										"646887736dc1e273d89a41e9"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "196"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c4-wz9WKBJAk2tQXXISyuJafeq7hMY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 May 2023 10:16:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": null,\n    \"data\": {\n        \"books\": [\n            \"6469d9c733bb94a208c8de64\"\n        ],\n        \"_id\": \"646887736dc1e273d89a41e9\",\n        \"name\": \"Genre 1\",\n        \"createdAt\": \"2023-05-20T08:40:19.830Z\",\n        \"updatedAt\": \"2023-05-21T10:16:29.803Z\",\n        \"__v\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Genre Lists",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/genre",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"genre"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Genre Lists",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3002/genre",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"genre"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "162"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a2-5wnUNP3kTUu+J206mIVWjEGQueU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 May 2023 08:40:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"data\": [\n        {\n            \"_id\": \"646887736dc1e273d89a41e9\",\n            \"name\": \"Genre 1\",\n            \"createdAt\": \"2023-05-20T08:40:19.830Z\",\n            \"updatedAt\": \"2023-05-20T08:40:19.830Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Review",
+			"item": [
+				{
+					"name": "Create Review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"rating\": 5,\r\n    \"comment\": \"Test review\",\r\n    \"userId\": \"64687833f66f4f3ef099626a\",\r\n    \"bookId\": \"6469d9c733bb94a208c8de64\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/review",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"review"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Review",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"rating\": 5,\r\n    \"comment\": \"Test review\",\r\n    \"userId\": \"64687833f66f4f3ef099626a\",\r\n    \"bookId\": \"6469d9c733bb94a208c8de64\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3002/review",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"review"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "223"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"df-1QEPNEwAAitxYA91Rhewt3KxyjE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 May 2023 09:06:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6469df043a3ef076002ff9f9\",\n    \"rating\": 5,\n    \"comment\": \"Test review\",\n    \"book\": \"6469d9c733bb94a208c8de64\",\n    \"user\": \"64687833f66f4f3ef099626a\",\n    \"createdAt\": \"2023-05-21T09:06:12.779Z\",\n    \"updatedAt\": \"2023-05-21T09:06:12.779Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Review",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"rating\": 5,\r\n    \"comment\": \"Test review New\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/books/6469d9c733bb94a208c8de64/reviews/6469df043a3ef076002ff9f9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"books",
+								"6469d9c733bb94a208c8de64",
+								"reviews",
+								"6469df043a3ef076002ff9f9"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Review",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"rating\": 5,\r\n    \"comment\": \"Test review New\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3002/books/6469d9c733bb94a208c8de64/reviews/6469df043a3ef076002ff9f9",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"books",
+										"6469d9c733bb94a208c8de64",
+										"reviews",
+										"6469df043a3ef076002ff9f9"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "250"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fa-kUOUl1MxWGszZXjqjI8u8t/Xe7k\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 May 2023 09:18:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"data\": {\n        \"_id\": \"6469df043a3ef076002ff9f9\",\n        \"rating\": 5,\n        \"comment\": \"Test review New\",\n        \"book\": \"6469d9c733bb94a208c8de64\",\n        \"user\": \"64687833f66f4f3ef099626a\",\n        \"createdAt\": \"2023-05-21T09:06:12.779Z\",\n        \"updatedAt\": \"2023-05-21T09:18:43.175Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "All Review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/review",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"review"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "All Review",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3002/review",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"review"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "252"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fc-OaX/4KsciDDJX9saetEpUkmmirw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 May 2023 09:48:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"data\": [\n        {\n            \"_id\": \"6469df043a3ef076002ff9f9\",\n            \"rating\": 5,\n            \"comment\": \"Test review New\",\n            \"book\": \"6469d9c733bb94a208c8de64\",\n            \"user\": \"64687833f66f4f3ef099626a\",\n            \"createdAt\": \"2023-05-21T09:06:12.779Z\",\n            \"updatedAt\": \"2023-05-21T09:18:43.175Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
